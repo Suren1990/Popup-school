@@ -1,4 +1,4 @@
-import { useId, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import AddTodo from './components/AddTodo/AddTodo';
 import TodoList from './components/TodoList/TodoList';
@@ -6,8 +6,6 @@ import Tabs from './components/Tabs/Tabs';
 import { ITodo } from './models/ITodo';
 
 function App() {
-  const id = useId();
-
   const tabList = ['all', 'active', 'completed'];
 
   const [activeTab, setActiveTab] = useState('all');
@@ -17,7 +15,7 @@ function App() {
 
   const addTodo = (title: string) => {
     const newTodo: ITodo = {
-      id,
+      id: String(Math.random()),
       title,
       isCompleted: false,
     };

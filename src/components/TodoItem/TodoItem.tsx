@@ -11,7 +11,7 @@ interface TodoItemProps {
 
 const TodoItem: React.FC<TodoItemProps> = ({ todo, activeTab, deleteTodo, completeTodo }) => {
 
-    const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const onChange = (e: ChangeEvent<HTMLInputElement>) => {        
         completeTodo({
             ...todo,
             isCompleted: e.target.checked,
