@@ -1,0 +1,29 @@
+.todolist {
+    
+    &__content {        
+        margin-block-end: 2rem;
+    }
+
+    &__btn_delete{
+        display: block;
+        min-width: 7.75rem;
+        height: 2.5rem;
+        margin-inline-start: auto;
+        font-size: .75rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #EB5757;
+        transition: background-color 180ms;
+        border-radius: .25rem;
+        
+        &:hover {
+            background-color: #bd0000;
+        }
+    }
+
+    &__notodo {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+.todoitem {
+    display: flex;
+    align-items: center;
+    height: 1.875rem;
+
+    & + & {
+        margin-block-start: .75rem;
+    }
+    
+    &__title {
+        font-size: 1.125rem;
+        color: #000;
+    }
+    
+    &__title_completed {
+        text-decoration: line-through;
+    }
+
+    &__delete {
+        margin-inline-start: auto;
+        font-size: 1.25rem;
+        color: #686767;
+        background-color: transparent;
+
+        &:hover {
+            color: #EB5757;
+        }
+    }
+}
